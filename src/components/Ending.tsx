@@ -87,13 +87,13 @@ export default function Ending() {
               </motion.h3>
             ) : (
               <motion.h3
-                key="forever"
+                key="lifetime"
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.5 }}
-                className="font-serif text-3xl md:text-4xl text-gradient font-bold tracking-widest uppercase"
+                className="font-serif text-xl md:text-2xl text-gradient font-bold tracking-wider uppercase text-center"
               >
-                Forever
+                A whole life to spend together...
               </motion.h3>
             )}
           </AnimatePresence>

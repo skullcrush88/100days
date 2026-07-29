@@ -163,7 +163,7 @@ export default function EntryGate({ onUnlock }: EntryGateProps) {
               100 Days Together
             </h1>
             <p className="text-[10px] font-sans text-pink-accent/70 tracking-widest uppercase font-semibold">
-              Enter Anniversary Date
+              Crack the password
             </p>
           </div>
 
@@ -263,10 +263,10 @@ export default function EntryGate({ onUnlock }: EntryGateProps) {
                   className="bg-white/45 border border-[#EBE3D5] rounded-2xl p-3 text-left w-full shadow-xs"
                 >
                   <span className="text-[9px] uppercase font-sans text-gold-accent tracking-widest block mb-0.5 font-semibold">
-                    Passcode Hint
+                    Hint
                   </span>
                   <p className="text-xs font-sans text-[#3A2E2B]/80 leading-relaxed font-medium">
-                    The 8-digit date when our journey began (DDMMYYYY).
+                    When it all began.
                   </p>
                 </motion.div>
               )}
