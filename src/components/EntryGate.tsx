@@ -160,7 +160,7 @@ export default function EntryGate({ onUnlock }: EntryGateProps) {
 
           <div className="space-y-1">
             <h1 className="font-serif text-2xl md:text-3xl text-[#3A2E2B] font-bold">
-              For Sidrat
+              100 Days Together
             </h1>
             <p className="text-[10px] font-sans text-pink-accent/70 tracking-widest uppercase font-semibold">
               Enter Anniversary Date
