@@ -8,7 +8,7 @@ interface IntroProps {
 }
 
 const sentences = [
-  "Hi Sidrat.",
+  "Hi Sidrat, myyyy babbyyyyy ❤️",
   "Happy 100 Days.",
   "Thank you for existing."
 ];
