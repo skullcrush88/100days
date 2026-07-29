@@ -20,7 +20,6 @@ export default function MemoryStars() {
     { id: 2, title: "Your random yapping", text: "I could listen to you talk about the most random details for hours. Your excitement is contagious.", x: 38, y: 20 },
     { id: 3, title: "Every goodnight", text: "Ending my day with your warm 'goodnight' makes the distance feel like nothing but numbers.", x: 68, y: 15 },
     { id: 4, title: "Every sleepy call", text: "Your soft, raspy, half-asleep voice is my absolute favorite sound in the entire world.", x: 85, y: 40 },
-    { id: 5, title: "The way you care", text: "You notice the smallest shifts in my mood and always know exactly how to make me feel safe, heard, and deeply loved.", x: 72, y: 75 },
     { id: 6, title: "Your smile", text: "Seeing you happy is my favorite sight. It's the reason I smile when looking at my screen.", x: 42, y: 80 },
     { id: 7, title: "Everything.", text: "Every single text, giggle, sleepy sigh, and quiet moment. I love every single piece of who you are.", x: 18, y: 65 },
   ];
@@ -76,16 +75,7 @@ export default function MemoryStars() {
               viewport={{ once: true }}
               transition={{ duration: 2, delay: 1 }}
             />
-            <motion.line
-              x1="68%" y1="15%"
-              x2="72%" y2="75%"
-              stroke="rgba(199, 155, 36, 0.22)"
-              strokeWidth="1"
-              initial={{ pathLength: 0 }}
-              whileInView={{ pathLength: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2, delay: 1.5 }}
-            />
+
           </svg>
 
           {/* Render individual stars */}
