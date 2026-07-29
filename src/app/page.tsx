@@ -17,7 +17,6 @@ import CinematicText from "@/components/CinematicText";
 import Envelopes from "@/components/Envelopes";
 import LoveLetter from "@/components/LoveLetter";
 import Ending from "@/components/Ending";
-import BackgroundMusic from "@/components/BackgroundMusic";
 import { ChevronDown } from "lucide-react";
 
 export default function Home() {
@@ -32,8 +31,7 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen bg-midnight text-foreground selection:bg-pink-accent/20 selection:text-pink-accent overflow-x-hidden">
-      {/* Background Sound controls */}
-      <BackgroundMusic playTriggered={musicTriggered} />
+
 
       <AnimatePresence mode="wait">
         {/* Stage 1: Password Lock Gate */}

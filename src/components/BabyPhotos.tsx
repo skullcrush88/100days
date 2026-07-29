@@ -63,7 +63,6 @@ export default function BabyPhotos() {
             </div>
             <div className="pt-4 text-center">
               <p className="font-handwritten text-3xl text-[#3A2E2B] font-bold">Armaan</p>
-              <p className="text-[10px] font-sans uppercase tracking-widest text-[#C79B24] mt-1">April 2006</p>
             </div>
           </div>
         </motion.div>
@@ -112,7 +111,6 @@ export default function BabyPhotos() {
             </div>
             <div className="pt-4 text-center">
               <p className="font-handwritten text-3xl text-[#3A2E2B] font-bold">Sidrat</p>
-              <p className="text-[10px] font-sans uppercase tracking-widest text-[#C79B24] mt-1">April 2006</p>
             </div>
           </div>
         </motion.div>
