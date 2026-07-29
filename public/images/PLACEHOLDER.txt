@@ -1,0 +1,3 @@
+Please replace this folder's contents with your actual baby photos:
+1. Name the baby boy's photo: "baby_boy.jpg" (or .png)
+2. Name the baby girl's photo: "baby_girl.jpg" (or .png)
