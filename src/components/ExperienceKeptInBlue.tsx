@@ -196,7 +196,7 @@ export default function ExperienceKeptInBlue({ onBack }: ExperienceKeptInBluePro
                 {/* Letter Heading */}
                 <div className="pb-5 pt-1 border-b border-[#9E7A52]/40 text-left">
                   <h1 className="font-handwritten text-3xl sm:text-4xl md:text-5xl text-[#2E1A0F] tracking-wide leading-tight">
-                    For my pretty girl, Sidrat.
+                    To the girl I adore, Sidrat.
                   </h1>
                   <div className="w-20 h-0.5 bg-gradient-to-r from-[#8A6A45] to-transparent rounded-full mt-2" />
                 </div>
