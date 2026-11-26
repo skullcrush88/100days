@@ -389,7 +389,7 @@ export default function Home() {
           <ScrapbookPasswordGate
             key="gate-girlfriendsday"
             title="Girlfriend's Day"
-            hint="When my world started ♡ (or 1st August)"
+            hint="When my world started ♡"
             expectedPasswords={[
               // Sidrat's birthday ("When my world started")
               "19032006",
