@@ -29,12 +29,23 @@ export default function ScrapbookPasswordGate({
     setIsSubmitting(true);
     setError("");
 
-    // Normalizing input: lowercase, trim multiple spaces, replace hyphens/slashes
-    const normalized = password.trim().toLowerCase().replace(/[\/\-_]/g, " ");
+    // Normalizing helper: lowercase, trim, strip all non-alphanumeric chars
+    const clean = (str: string) => str.toLowerCase().replace(/[^a-z0-9]/g, "");
+    const inputClean = clean(password);
+
+    // Also support ordinal removal e.g. "21st" -> "21", "19th" -> "19", "1st" -> "1"
+    const inputWithoutOrdinal = inputClean.replace(/(\d+)(st|nd|rd|th)/g, "$1");
 
     const isCorrect = expectedPasswords.some((pwd) => {
-      const normPwd = pwd.trim().toLowerCase().replace(/[\/\-_]/g, " ");
-      return normalized === normPwd;
+      const pwdClean = clean(pwd);
+      const pwdWithoutOrdinal = pwdClean.replace(/(\d+)(st|nd|rd|th)/g, "$1");
+
+      return (
+        inputClean === pwdClean ||
+        inputWithoutOrdinal === pwdClean ||
+        inputClean === pwdWithoutOrdinal ||
+        inputWithoutOrdinal === pwdWithoutOrdinal
+      );
     });
 
     setTimeout(() => {
@@ -163,7 +174,7 @@ export default function ScrapbookPasswordGate({
             </div>
 
             {/* Error Message */}
-            <div className="h-6 flex items-center justify-center">
+            <div className="min-h-[1.5rem] flex items-center justify-center">
               <AnimatePresence mode="wait">
                 {error && (
                   <motion.p
@@ -177,6 +188,18 @@ export default function ScrapbookPasswordGate({
                 )}
               </AnimatePresence>
             </div>
+
+            {/* Password Hint */}
+            {hint && (
+              <div className="bg-white/5 border border-white/10 rounded-2xl py-2 px-4 text-center">
+                <span className="text-[10px] uppercase font-sans text-gold-accent tracking-widest block font-semibold mb-0.5">
+                  Hint
+                </span>
+                <p className="text-xs font-serif italic text-cream-accent/80">
+                  "{hint}"
+                </p>
+              </div>
+            )}
 
 
           </form>

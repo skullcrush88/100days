@@ -366,8 +366,20 @@ export default function Home() {
           <ScrapbookPasswordGate
             key="gate-100days"
             title="100 Days"
-            hint="The day everything began."
-            expectedPasswords={["21042026", "21 April 2026", "21/04/2026", "21-04-2026"]}
+            hint="The day everything began (DD/MM/YYYY)"
+            expectedPasswords={[
+              "21042026",
+              "21 April 2026",
+              "21/04/2026",
+              "21-04-2026",
+              "21.04.2026",
+              "21st April 2026",
+              "21 April",
+              "April 21",
+              "April 21 2026",
+              "2104",
+              "210426",
+            ]}
             onSuccess={() => handleUnlockSuccess("100days")}
             onBack={() => setActiveGate(null)}
           />
@@ -377,8 +389,39 @@ export default function Home() {
           <ScrapbookPasswordGate
             key="gate-girlfriendsday"
             title="Girlfriend's Day"
-            hint="when my world started"
-            expectedPasswords={["19032006", "19 March 2006", "19/03/2006", "19-03-2006"]}
+            hint="When my world started ♡ (or 1st August)"
+            expectedPasswords={[
+              // Sidrat's birthday ("When my world started")
+              "19032006",
+              "19 March 2006",
+              "19/03/2006",
+              "19-03-2006",
+              "19.03.2006",
+              "19th March 2006",
+              "19 March",
+              "March 19",
+              "March 19 2006",
+              "1903",
+              "190306",
+              // Girlfriend's Day date (from the card: 01 AUGUST 2026)
+              "01082026",
+              "1082026",
+              "01/08/2026",
+              "1/08/2026",
+              "01-08-2026",
+              "1-08-2026",
+              "01.08.2026",
+              "1.08.2026",
+              "01 August 2026",
+              "1 August 2026",
+              "1st August 2026",
+              "August 1 2026",
+              "01 August",
+              "1 August",
+              "August 1",
+              "0108",
+              "108",
+            ]}
             onSuccess={() => handleUnlockSuccess("girlfriendsday")}
             onBack={() => setActiveGate(null)}
           />
